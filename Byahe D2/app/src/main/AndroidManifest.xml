@@ -17,10 +17,12 @@
             android:windowSoftInputMode="stateHidden"/>
         <activity
             android:name=".CreateAccount_Interface"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
             android:name=".LogIn_Interface"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
             android:name=".Welcome_Interface"
             android:exported="true" >

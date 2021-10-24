@@ -9,6 +9,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -24,7 +26,28 @@ public class LogIn_Interface extends AppCompatActivity {
     Button LI_CreateAccountButton;
     Button LI_GuestButton;
 
+    TextView Overlay;
+    ProgressBar Pbar;
+
     FirebaseAuth mAuth = FirebaseAuth.getInstance();
+
+    void Enable()
+    {
+        Overlay.setVisibility(View.GONE);
+        Pbar.setVisibility(View.GONE);
+        LI_LogInButton.setEnabled(true);
+        LI_CreateAccountButton.setEnabled(true);
+        LI_GuestButton.setEnabled(true);
+    }
+    void Disable()
+    {
+        Overlay.setVisibility(View.VISIBLE);
+        Pbar.setVisibility(View.VISIBLE);
+        LI_LogInButton.setEnabled(false);
+        LI_CreateAccountButton.setEnabled(false);
+        LI_GuestButton.setEnabled(false);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +60,16 @@ public class LogIn_Interface extends AppCompatActivity {
         LI_CreateAccountButton = findViewById(R.id.LI_CreateAccountButton);
         LI_GuestButton = findViewById(R.id.LI_GuestButton);
 
+        Overlay = findViewById(R.id.LI_Overlay);
+        Pbar = findViewById(R.id.LI_ProgressBar);
+
         Intent CreateAccount = new Intent(this,CreateAccount_Interface.class);
         Intent Main = new Intent(this,MainActivity.class);
 
         LI_LogInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Disable();
                 int Error = 0;
                 if(LI_EmailText.getText().toString().isEmpty())
                 {
@@ -63,7 +90,9 @@ public class LogIn_Interface extends AppCompatActivity {
                             if(task.isSuccessful())
                             {
                                 startActivity(Main);
+                                Enable();
                                 finish();
+
                             }
                             else
                             {
@@ -71,11 +100,21 @@ public class LogIn_Interface extends AppCompatActivity {
                                 if(task.getException().getMessage().equals("There is no user record corresponding to this identifier. The user may have been deleted."))
                                 {
                                     Toast.makeText(getApplicationContext(),"User does not exist",Toast.LENGTH_LONG).show();
-                                }
 
+                                }
+                                else
+                                {
+                                    Toast.makeText(getApplicationContext(),task.getException().getMessage(),Toast.LENGTH_LONG).show();
+
+                                }
+                                Enable();
                             }
                         }
                     });
+                }
+                else
+                {
+                    Enable();
                 }
             }
         });
