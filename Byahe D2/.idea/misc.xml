@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/Byahe D2/app/src/main/res/drawable/curved_button.xml" value="0.2203125" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/Byahe D2/app/src/main/res/drawable/textbox_style.xml" value="0.2203125" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/Byahe D2/app/src/main/res/layout/activity_create_account_interface.xml" value="0.18885869565217392" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/Byahe D2/app/src/main/res/layout/activity_log_in_interface.xml" value="0.18885869565217392" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/Byahe D2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/drawable/border_top.xml" value="0.2203125" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/drawable/curved_button.xml" value="0.2203125" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/drawable/gray_box_curved.xml" value="0.2203125" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/drawable/ic_baseline_search_white_24.xml" value="0.2203125" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2203125" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/drawable/white_box_curved_border.xml" value="0.2203125" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/layout/activity_create_account_interface.xml" value="0.25" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/layout/activity_log_in_interface.xml" value="0.25" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/layout/activity_welcome_interface.xml" value="0.18070652173913043" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/layout/fragment_location.xml" value="0.17657657657657658" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/layout/fragment_settings.xml" value="0.17657657657657658" />
+        <entry key="..\:/Profiles/Kenzhie/Desktop/Software Projects/Client Projects/ByaheD2/Byahe D2/app/src/main/res/menu/bottomnav.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
